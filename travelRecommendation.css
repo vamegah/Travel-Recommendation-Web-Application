@@ -88,21 +88,9 @@ body::before {
     display: flex; 
     flex: 1; 
 }
-.content {
-    color: white;
-    text-align: left;
-    padding: 150px 100px;
-    width: 450px;
-}
 .content h1{
     font-size: 48px;
     font-weight: bold;
-}
-.team {
-    color: white;
-    text-align: left;
-    padding: 0px 100px;
-    flex: 1;
 }
 .team h1{
     font-size: 48px;
@@ -131,6 +119,63 @@ body::before {
 
 .card p {
     color: #c2c2c2; 
+}
+
+.content {
+    color: white;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+.content h1 {
+    font-size: 50px;
+    margin: 0px 0;
+    text-align: left;
+}
+.about-text {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+}
+.team-section {
+    text-align: left;
+}
+.team-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.team {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.team-member {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+}
+.team-member img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 0px;
+    width:25px;
+    margin-right: 3px;
+    float:left;
+}
+.team-member h3 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+.team-member p {
+    font-size: 18px;
+    margin: 5px 0;
 }
 
 .social-icons {
