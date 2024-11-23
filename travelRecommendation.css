@@ -1,0 +1,235 @@
+html, body {
+    height: 100%;
+    margin: 0; 
+}
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    background-image: url('img/samuel-han-2StpuBvgzWA-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(71, 58, 129, 0.897), rgba(76, 175, 80, 0));
+    z-index: -1;
+}
+.container {
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
+}
+
+/*-------------------------------------------------------------*/
+.logo {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 8px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    z-index: 2;
+}
+.nav-links {
+    display: flex; 
+    flex-grow: 1; 
+    justify-content: center; 
+}
+.nav-links a {
+    color: white; 
+    text-decoration: none;
+    margin: 0 15px;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 4px;
+}
+.search-bar input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+    width: 250px;
+}
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-left: 4px;
+}
+.search-icon {
+    margin-right: 8px;
+    color: #888;
+}
+/*-------------------------------------------------------------*/
+.main-content {
+    display: flex; /* Cambiar a flex para el contenido y resultados */
+    flex: 1; /* Permitir que ocupe el espacio restante */
+}
+.content {
+    color: white;
+    text-align: left;
+    padding: 0px 100px;
+    width: 450px;
+}
+.content h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+.team {
+    color: white;
+    text-align: left;
+    padding: 0px 100px;
+    flex: 1;
+}
+.team h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+    width: 20%;
+    height: min-content; 
+}
+
+.card h3 {
+    margin: 10px 0; 
+    color: #ffffff; 
+}
+
+.card p {
+    color: #c2c2c2; 
+}
+
+.social-icons {
+    position: fixed;
+    left: 24px;
+    top: 50%;
+}
+.social-icons a {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 24px;
+}
+.book-now {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+.footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.footer a {
+    color: white;
+}
+
+.contact-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px; 
+    border-radius: 8px; 
+    margin: 20px auto;
+    max-width: 450px; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block; 
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.btn-submit {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}
+
+.recommendation {
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.recommendation img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+#results {
+    flex: 0 0 300px; /* Ancho fijo para los resultados */
+    max-width: 300px; /* Limitar el ancho máximo */
+    overflow-y: auto; /* Permitir desplazamiento si hay muchos resultados */
+    padding: 10px; /* Espaciado interno */
+}
