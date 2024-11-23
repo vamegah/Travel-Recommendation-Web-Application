@@ -33,7 +33,7 @@ body::before {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
 }
 .navbar {
     background-color: rgba(0, 0, 0, 0.8);
@@ -71,7 +71,7 @@ body::before {
     width: 250px;
 }
 .btn {
-    background-color: #4CAF50;
+    background-color: #197665e2;
     color: white;
     border: none;
     cursor: pointer;
@@ -145,7 +145,7 @@ body::before {
     font-size: 20px;
 }
 .book-now {
-    background-color: #4CAF50;
+    background-color: #197665e2;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
