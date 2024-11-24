@@ -4,50 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' type='text/css' href='travelRecommendation.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src='travel_recommendation.js'></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <title>TravelBloom - EXPLORE DREAM DESTINATION</title>
+    <title>Contact Us - Travel Recommendations</title>
 </head>
 <body>
     <div class="container">
-        <nav class="navbar home">
+        <nav class="navbar">
             <div class="logo">
-                <i data-feather="map"></i>
-                TravelBloom
+                <i class="fa fa-globe" ></i>
+                EllenceTravelBloom
             </div>
             <div class="nav-links">
-                <a href="#">Home</a>
+                <a href="travel_recommendation.html">Home</a>
                 <a href="about-us.html">About Us</a>
-                <a href="contact.html">Contact Us</a>
-            </div>
-            <div class="search-bar">
-                <input type="text" placeholder="Enter a destination or keyword">
-                <i class="search-icon" data-feather="search"></i>
-                <button class="btn buscar">Search</button>
-                <button class="btn limpiar">Clear</button>
+                <a href="#">Contact Us</a>
             </div>
         </nav>        
-        <div class="main-content">
-            <div class="content">
-                <h1>EXPLORE<br>DREAM<br>DESTINATION</h1>
-                <p>Embark on a journey that ignites your soul! Venture into uncharted territories, where every step unveils a tapestry of diverse cultures and breathtaking landscapes. Let your wanderlust guide you to that dream destination that not only captivates your heart but also awakens a profound sense of wonder. Your next adventure awaits – are you ready to answer the call of the unknown?</p>
-                <a href="#" class="book-now">BOOK NOW</a>
-            </div>
 
-            <div id="results"></div>
-        </div>
+        <section class="contact-us">
+            <div class="left">
+              <h1>CONTACT US</h1>
+              <p>Get in touch.</p>
+            </div>
+            <div class="right">
+              <form id="contact_form">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                />
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email address"
+                />
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  placeholder="Enter your message"
+                  col="50"
+                  row="5"
+                ></textarea>
+                <button type="submit" id="submitBtn">Submit</button>
+              </form>
+            </div>
+          </section>
+
         <div class="social-icons">
-            <a href="#" title="Twitter"><i data-feather="twitter"></i></a>
-            <a href="#" title="Facebook"><i data-feather="facebook"></i></a>
-            <a href="#" title="Instagram"><i data-feather="instagram"></i></a>
-            <a href="#" title="YouTube"><i data-feather="youtube"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
         </div>
-        <div class="footer">
-            Photo by <a href="https://unsplash.com/es/@smuelhan?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Samuel Han</a> - <a href="https://unsplash.com/es/fotos/foto-a-vista-de-pajaro-de-la-ciudad-cerca-del-oceano-2StpuBvgzWA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        <div >
+          
         </div>
     </div>
     <script>
-      feather.replace();
     </script>
 </body>
 </html>
