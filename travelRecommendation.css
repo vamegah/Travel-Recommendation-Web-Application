@@ -177,6 +177,20 @@ body::before {
     font-size: 18px;
     margin: 5px 0;
 }
+.team-member button {
+  background-color: #332ed6;
+  border: 1px solid #7600bc;
+  color: white;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+  margin-left: 0%;
+  position: fixed;
+}
 
 .social-icons {
     position: fixed;
