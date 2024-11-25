@@ -392,12 +392,28 @@ body::before {
 }
 
 #results {
-    flex: 0 0 300px;
-    /* Ancho fijo para los resultados */
-    max-width: 300px;
-    /* Limitar el ancho máximo */
-    overflow-y: auto;
-    /* Permitir desplazamiento si hay muchos resultados */
-    padding: 10px;
-    /* Espaciado interno */
-}
+    flex: 1;
+    padding: 12px;
+    color: white;
+  }
+  
+  .card {
+    border-radius: 12px;
+    background-color: white;
+    width: 500px;
+  }
+  
+  .card .inner {
+    padding: 8px 12px;
+   
+  }
+  
+  .inner button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #16a085;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 12px;
+  }

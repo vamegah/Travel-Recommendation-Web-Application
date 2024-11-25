@@ -70,13 +70,8 @@ searchButton.addEventListener("click", () => {
         
 });
 
-
-
 clearButton.addEventListener("click", () => {
     userInput.value = "";
     const resultDiv = document.getElementById("results");
     resultDiv.innerHTML = "Enter keyword like beaches, temples or countries";
 });
-
-searchButton.addEventListener("click", () => console.log("Search button clicked"));
-clearButton.addEventListener("click", () => console.log("Clear button clicked"));
